@@ -28,7 +28,7 @@ class Pessoa implements TemNome, TemSobrenome
     }
 }
 
-function ImprimeDadosPessoa(TemNome&TemSobrenome $pessoa)
+function ImprimeDadosPessoa((TemNome&TemSobrenome)|Pessoa $pessoa)
 {
     echo "Nome: " . $pessoa->getNome();
     echo "<br>";
