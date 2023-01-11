@@ -1,12 +1,15 @@
 <?php
 
-class Pessoa
+readonly class Pessoa
 {
     public function __construct(
-        public readonly string $nome
+        public string $nome,
+        public string $sobrenome,
+        public int $idade,
     )
     {}
 }
 
-$joao = new Pessoa('João Pessoa');
-echo $joao->nome;
+$joao = new Pessoa('João', 'Pessoa', 30);
+
+var_dump($joao);
